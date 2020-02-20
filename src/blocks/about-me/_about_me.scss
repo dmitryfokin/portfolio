@@ -92,11 +92,14 @@
   }
 }
 
-.about-me__text-links {
-  display: none;
+.about-me__text-desc-item {
+  & i {
+    color: $color-main;
 
-  @media (min-width: 1200px) {
-    display: flex;
-    justify-content: flex-start;
+  }
+
+  &:hover i {
+    color: gold;
   }
 }
+

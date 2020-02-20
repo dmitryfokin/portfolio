@@ -66,3 +66,41 @@ img {
   }
 
 }
+
+.btn {
+  display: block;
+
+  height: 100%;
+
+  padding: 15px 20px;
+
+  color: $color-main-font-invert;
+  background-color: $color-main;
+  border-radius: 3px;
+
+  transition: background .2s linear;
+
+  &:hover {
+
+  }
+}
+
+.row-half {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 15px);
+  }
+}
+
+.row-third {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 15px);
+  }
+
+  @media (min-width: 1200px) {
+    width: calc(33% - 30px);
+  }
+}

@@ -1,0 +1,46 @@
+include ../project-card/_project-card
+
+-
+  var projectCards = {
+    prj001: {
+      href_img: 'https://dmitryfokin.github.io/training-forest-travel/img/forest-travel.jpg',
+      href: 'https://dmitryfokin.github.io/training-forest-travel/',
+      title: 'Верстка “Форест тревел”',
+      desc: 'Верстка многостраничного сайта.',
+      filters: 'filter-bootstrap filter-wordpress filter-frontend'
+    },
+    prj002: {
+      href_img: 'https://dmitryfokin.github.io/training-unit/img/unit.jpg',
+      href: 'https://dmitryfokin.github.io/training-unit/',
+      title: 'Лендинг “Юнит”',
+      desc: 'Учебный проект верстки лендинг страницы с адаптивной версткой',
+      filters: 'filter-bootstrap filter-wordpress filter-frontend'
+    },
+    prj003: {
+      href_img: 'https://dmitryfokin.github.io/training-project-portfolio/img/portfolio-site.jpg',
+      href: 'https://dmitryfokin.github.io/training-project-portfolio/',
+      title: 'Верстка “Сайт портфолио”',
+      desc: 'Верстка адаптивного портфолио.',
+      filters: 'filter-bootstrap filter-frontend'
+    }
+  }
+// >>> Секция проектов >>>
+section.section-portfolio#projects
+  .container
+    .section-portfolio__title
+      h2.title-2 Портфолио
+    .section-project-cards
+      .project-cards
+        // >>> Строка двух больших карточек >>>
+        .project-cards__row
+          // >>> Карточка проекта >>>
+          +project-card(projectCards.prj001)(class="row-third")
+          // <<< Карточка проекта <<<
+          // >>> Карточка проекта >>>
+          +project-card(projectCards.prj002)(class="row-third")
+          // <<< Карточка проекта <<<
+          // >>> Карточка проекта >>>
+          +project-card(projectCards.prj003)(class="row-third")
+          // <<< Карточка проекта <<<
+        // <<< Строка двух больших карточек <<<
+// <<< Секция проектов <<<

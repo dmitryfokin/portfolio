@@ -1,0 +1,33 @@
+.section-portfolio {
+  padding-top: 45px;
+  padding-bottom: 90px;
+
+  background-color: #f4f8f9;
+  @media (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 105px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-portfolio__title {
+  margin-bottom: 60px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
+.project-cards__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+

@@ -1,0 +1,48 @@
+.in-touch__title {
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 35px;
+  }
+}
+
+.in-touch__social-icons {
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 35px;
+  }
+
+  & .social-icons {
+
+    & a {
+      margin-right: 28px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.in-touch__email {
+  text-decoration: underline;
+  color: $color-link-font;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+
+  &:hover {
+    //color: @color-alt-1;
+  }
+
+  &:active {
+    //color: @color-focus-2;
+  }
+}

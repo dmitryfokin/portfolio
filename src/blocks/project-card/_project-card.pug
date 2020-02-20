@@ -1,0 +1,14 @@
+// >>> Карточка проекта >>>
+mixin project-card(data)
+  .project-card(class=attributes.class, class=data.filters)
+    |
+    a.project-card__img-wrapper(href=data.href)
+      |
+      img.project-card__img(src=data.href_img, alt=data.title)
+      |
+      span.btn.project-card__btn Смотреть проект
+    .project-card__title.title-4
+      | #{data.title}
+    .project-card__desc
+      | #{data.desc}
+// <<< Карточка проекта <<<
