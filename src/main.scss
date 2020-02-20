@@ -2,7 +2,4 @@
 @import "template";
 @import "./layouts/base";
 
-
-body {
-  background-color: aquamarine;
-}
+@import "blocks/nav/nav";
