@@ -8,10 +8,10 @@
   &:hover .project-card__btn {
     display: block;
     opacity: 1;
-    top: 50%;
+    top: 70%;
     left: 50%;
 
-    transform: translate(-50%, -50%);
+    //transform: translate(-50%, -20%);
   }
 
   &:hover .project-card__img-wrapper::after {
@@ -67,7 +67,7 @@
   top: 100%;
   left: 50%;
 
-  width: 70%;
+  width: fit-content;
   height: auto;
   transition: top 0.5s;
 
@@ -75,22 +75,12 @@
 
   background-color: $color-main;
   color: $color-main-font-invert;
+  font-weight: 700;
 
   z-index: 3;
 
   @media (min-width: 768px) {
-    width: 300px;
-  }
-
-  &:hover {
-    //background-color: $color-focus-1;
-    //color: #fff;
-    color: #fffc3c;
-  }
-
-  &:active {
-    //background-color: #d4423b;
-    color: $color-focus-3;
+    //width: 300px;
   }
 }
 

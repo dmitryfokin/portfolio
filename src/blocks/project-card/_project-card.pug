@@ -2,7 +2,7 @@
 mixin project-card(data)
   .project-card(class=attributes.class, class=data.filters)
     |
-    a.project-card__img-wrapper(href=data.href)
+    a.project-card__img-wrapper(href=data.href, target='_blank')
       |
       img.project-card__img(src=data.href_img, alt=data.title)
       |
