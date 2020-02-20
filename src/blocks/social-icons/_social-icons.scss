@@ -1,0 +1,38 @@
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+
+  height: 48px;
+
+  font-size: 48px;
+
+  & a {
+    display: block;
+    margin-right: 25px;
+    line-height: 48px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.social-icon-github {
+  color: #212121;
+}
+
+.social-icon-telegram {
+  color: #039be5;
+}
+
+.social-icon-vk {
+  color: #4d76a1;
+}
+
+.social-icon-facebook {
+  color: #3b5998;
+}

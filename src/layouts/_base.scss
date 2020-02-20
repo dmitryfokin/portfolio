@@ -12,13 +12,13 @@ html, body {
   color: $color-main-font;
 
   font-family: 'M PLUS 1p', sans-serif;
-  font-size: 18px;
+  font-size: $font-size;
   line-height: 1.5;
 }
 
-
 a,
 a:hover {
+  color: $color-link-font;
   text-decoration: none;
 }
 

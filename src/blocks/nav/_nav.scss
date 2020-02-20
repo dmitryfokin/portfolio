@@ -14,3 +14,42 @@ nav {
   align-items: center;
   list-style-type: none;
 }
+
+.nav-menu__logo {
+  margin-right: 150px;
+  padding: 10px 15px;
+
+  color: $color-main-font;
+  font-weight: 900;
+  font-size: 1.2rem;
+
+  transition: background .2s linear;
+}
+
+.nav-menu__link {
+  padding: 10px 15px;
+
+  color: $color-main-font;
+  align-self: center;
+
+  transition: background .2s linear;
+
+  &:hover {
+    background: $color-main;
+    color: $color-main-font-invert;
+    border-radius: 3px;
+  }
+}
+
+.nav-menu__link-active {
+  font-weight: 700;
+}
+
+.nav-menu__social-icons-wrapper {
+  & a {
+    margin-right: 5px;
+    padding: 10px 15px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
