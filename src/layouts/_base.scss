@@ -47,6 +47,15 @@ img {
   height: auto;
 }
 
+button,
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: 530px;
   margin-left: auto;
