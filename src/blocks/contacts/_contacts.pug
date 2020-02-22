@@ -34,17 +34,5 @@ section.section-contacts#contacts
                   | Россия, Москва
         .contacts-info__social-icons-wrapper
           include ../social-icons/_social-icons
-      .form-callback-wrapper
-        form.form-callback(action='#', method='POST')
-          .form-callback__input-wrapper
-            input.form-callback__input(type='email', name='email')
-            span.fake-placeholder Ваш email
-          .form-callback__input-wrapper
-            input.form-callback__input(type='text', name='theme')
-            span.fake-placeholder Тема письма
-          .form-callback__message-wrapper
-            textarea.form-callback__textarea(name='message', cols='30', rows='4')
-            span.fake-placeholder Сообщение
-          .form-callback__submit-wrapper#form-callback__submit
-            input.btn(type='submit', value='Отправить')
+      include ../form-callback/_form-callback
 // <<< Контакты <<<

@@ -24,8 +24,8 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
-    max-width: unset;
-    //width: calc(50% - 16px);
+    max-width: 470px;
+    width: calc(50% - 16px);
   }
 
   @media (min-width: 1200px) {
@@ -33,20 +33,20 @@
     max-width: 475px;
   }
 
-  & img {
-    margin: 0 auto;
-
-    @media (min-width: 768px) {
-      margin-left: unset;
-    }
-  }
+  //& img {
+  //  margin: 0 auto;
+  //
+  //  @media (min-width: 768px) {
+  //    margin-left: unset;
+  //  }
+  //}
 }
 
 .about-me__text {
   width: 100%;
 
   @media (min-width: 768px) {
-    //width: ~ "calc(50% - 16px)";
+    width: calc(50% - 16px);
   }
 
   @media (min-width: 1200px) {

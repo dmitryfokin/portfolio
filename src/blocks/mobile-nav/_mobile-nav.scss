@@ -1,0 +1,187 @@
+.menu-icon {
+  z-index: 19;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  opacity: .5;
+
+  @media (min-width: 768px) {
+    //top: 40px;
+    right: 45px;
+  }
+  @media (min-width: 1200px) {
+    display: none;
+  }
+
+  &.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+  }
+}
+
+.menu-icon-line {
+  position: relative;
+
+  height: 5px;
+  width: 40px;
+
+  background-color: #000;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    top: -10px;
+
+    width: 40px;
+    height: 5px;
+
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    top: 10px;
+
+    width: 40px;
+    height: 5px;
+
+    background-color: #000;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+
+  background-color: rgba(36, 134, 177, 0.5);
+  transition: all 0.5s ease-in;
+
+  z-index: 18;
+}
+
+.mobile-nav-overlay--active {
+  display: block;
+  transition: all 0.5s ease-in;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  right: -550px;
+  display: block;
+  height: 100vh;
+  width: 320px;
+  background-color: #fff;
+  padding: 20px 29px 0 29px;
+  z-index: 7;
+  transition: transform 0.4s ease-in;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.mobile-nav {
+
+  & .social__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & .logo {
+    margin-bottom: 25px;
+  }
+}
+
+.mobile-nav--active {
+  transform: translate(-550px);
+  transition: transform 0.4s ease-in;
+}
+
+
+.mobile-nav-logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.mobile-nav-menu {
+  margin-bottom: 44px;
+
+  & a {
+    display: block;
+    position: relative;
+
+    margin-bottom: 22px;
+
+    width: fit-content;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      z-index: -1;
+      transition: all 0.5s ease-in;
+    }
+
+    &:hover:after {
+      background-color: #fbdc4d;
+    }
+  }
+}
+
+.mobile-nav-social-icons {
+  & .social-icons {
+    font-size: 40px;
+  }
+}

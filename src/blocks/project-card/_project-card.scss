@@ -17,10 +17,6 @@
   &:hover .project-card__img-wrapper::after {
     transform: translateY(0);
   }
-
-  &:hover .project-card__title {
-    color: $color-focus-1;
-  }
 }
 
 .project-card__img-wrapper {

@@ -26,6 +26,33 @@
 }
 
 .in-touch__email {
+  display: block;
+
+  text-decoration: underline;
+  color: $color-link-font;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+
+  &:hover {
+    //color: @color-alt-1;
+  }
+
+  &:active {
+    //color: @color-focus-2;
+  }
+}
+
+.in-touch__phone {
+  display: block;
+
+  text-decoration: underline;
   text-decoration: underline;
   color: $color-link-font;
   line-height: 1.2;

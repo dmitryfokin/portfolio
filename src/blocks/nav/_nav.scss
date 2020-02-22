@@ -1,18 +1,23 @@
 nav {
+  display: block;
   margin: 0 auto;
   max-width: 1100px;
   width: 100%;
 }
 
 .nav-menu {
-  padding: 0;
-  margin: 0;
-  height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
+  display: none;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
 }
 
 .nav-menu__logo {
@@ -46,6 +51,8 @@ nav {
 }
 
 .nav-menu__social-icons-wrapper {
+  display: block;
+
   & a {
     margin-right: 5px;
     padding: 10px 15px;

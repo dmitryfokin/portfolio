@@ -8,6 +8,7 @@ html {
 
 html, body {
   overflow-x: hidden;
+  height: 100%;
 
   color: $color-main-font;
 
@@ -111,4 +112,9 @@ button {
   @media (min-width: 1200px) {
     width: calc(33% - 30px);
   }
+}
+
+.no-scroll {
+  //position: fixed;
+  overflow: hidden;
 }
